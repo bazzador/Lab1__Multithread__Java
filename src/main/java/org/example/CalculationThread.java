@@ -5,10 +5,6 @@ public class CalculationThread extends Thread {
     private final BreakThread breakThread;
     private final int stepValue;
 
-    public long getId() {
-        return id;
-    }
-
     public CalculationThread(int id, BreakThread breakThread, int stepValue) {
         this.id = id;
         this.breakThread = breakThread;
@@ -26,4 +22,3 @@ public class CalculationThread extends Thread {
         System.out.println("id: " + id + " Sum: " + sum + " Count: " + count);
     }
 }
-
